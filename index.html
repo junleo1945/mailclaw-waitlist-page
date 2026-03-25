@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mailclaw — Join the Waitlist</title>
+  <link rel="icon" href="icons/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="#" class="logo">
+      <img class="logo-icon" src="icons/favicon.ico" alt="Mailclaw" />
+      <span>Mailclaw</span>
+    </a>
+  </nav>
+
+  <div class="divider"></div>
+
+  <!-- MAIN -->
+  <main class="main">
+    <div class="left">
+      <h1>Workflow automation, <em>starting from your inbox.</em></h1>
+      <p class="desc">
+        Mailclaw reads your email, connects to the tools you use daily, and handles the busywork. You only see what needs a decision.
+      </p>
+
+      <!-- Waitlist form -->
+      <form class="waitlist-form" id="waitlist-form">
+        <div class="input-row">
+          <input type="email" placeholder="you@company.com" required id="email-input" />
+          <button type="submit" class="submit-btn">Join waitlist</button>
+        </div>
+      </form>
+      <p class="hint">Free during beta · No credit card</p>
+
+      <div class="divider-h"></div>
+
+      <!-- Integrations -->
+      <div class="integrations-label">Works with</div>
+      <div class="marquee-wrapper">
+        <div class="marquee-fade-left"></div>
+        <div class="marquee-fade-right"></div>
+        <!-- Row 1 -->
+        <div class="marquee-track">
+          <div class="marquee-scroll scroll-left">
+            <span class="int-chip"><img src="icons/gmail.png" width="14" height="14"/> Gmail</span>
+            <span class="int-chip"><svg viewBox="0 0 468 222.5" width="24" height="12" fill="#635bff"><path d="M414 113.4c0-25.6-12.4-45.8-36.1-45.8-23.8 0-38.2 20.2-38.2 45.6 0 30.1 17 45.3 41.4 45.3 11.9 0 20.9-2.7 27.7-6.5v-20c-6.8 3.4-14.6 5.5-24.5 5.5-9.7 0-18.3-3.4-19.4-15.2h48.9c0-1.3.2-6.5.2-8.9zm-49.4-9.5c0-11.3 6.9-16 13.2-16 6.1 0 12.6 4.7 12.6 16h-25.8zM301.1 67.6c-9.8 0-16.1 4.6-19.6 7.8l-1.3-6.2h-22v116.6l25-5.3.1-28.3c3.6 2.6 8.9 6.3 17.7 6.3 17.9 0 34.2-14.4 34.2-46.1-.1-29-16.6-44.8-34.1-44.8zm-6 68.9c-5.9 0-9.4-2.1-11.8-4.7l-.1-37.1c2.6-2.9 6.2-4.9 11.9-4.9 9.1 0 15.4 10.2 15.4 23.3 0 13.4-6.2 23.4-15.4 23.4zM223.8 61.7l25.1-5.4V36l-25.1 5.3zM223.8 69.3h25.1v87.5h-25.1zM196.9 76.7l-1.6-7.4h-21.6v87.5h25V97.5c5.9-7.7 15.9-6.3 19-5.2v-23c-3.2-1.2-14.9-3.4-20.8 7.4zM146.9 47.6l-24.4 5.2-.1 80.1c0 14.8 11.1 25.7 25.9 25.7 8.2 0 14.2-1.5 17.5-3.3V135c-3.2 1.3-19 5.9-19-8.9V90.6h19V69.3h-19l.1-21.7zM79.3 94.7c0-3.9 3.2-5.4 8.5-5.4 7.6 0 17.2 2.3 24.8 6.4V72.2c-8.3-3.3-16.5-4.6-24.8-4.6C67.5 67.6 52 78.8 52 97.4c0 29.2 40.1 24.5 40.1 37.1 0 4.6-4 6.1-9.6 6.1-8.3 0-18.9-3.4-27.3-8v23.8c9.3 4 18.7 5.7 27.3 5.7 20.8 0 35.1-10.3 35.1-28.2-.1-31.5-40.3-25.9-40.3-37.2z"/></svg> Stripe</span>
+            <span class="int-chip"><img src="icons/slack.png" width="14" height="14"/> Slack</span>
+            <span class="int-chip"><img src="icons/notion.png" width="14" height="14"/> Notion</span>
+            <span class="int-chip"><img src="icons/hubspot.png" width="14" height="14"/> HubSpot</span>
+            <span class="int-chip"><img src="icons/sentry.webp" width="14" height="14"/> Sentry</span>
+            <span class="int-chip"><img src="icons/cloudflare.png" width="14" height="14"/> Cloudflare</span>
+            <span class="int-chip"><img src="icons/docusign.png" width="14" height="14"/> DocuSign</span>
+            <!-- duplicate -->
+            <span class="int-chip"><img src="icons/gmail.png" width="14" height="14"/> Gmail</span>
+            <span class="int-chip"><svg viewBox="0 0 468 222.5" width="24" height="12" fill="#635bff"><path d="M414 113.4c0-25.6-12.4-45.8-36.1-45.8-23.8 0-38.2 20.2-38.2 45.6 0 30.1 17 45.3 41.4 45.3 11.9 0 20.9-2.7 27.7-6.5v-20c-6.8 3.4-14.6 5.5-24.5 5.5-9.7 0-18.3-3.4-19.4-15.2h48.9c0-1.3.2-6.5.2-8.9zm-49.4-9.5c0-11.3 6.9-16 13.2-16 6.1 0 12.6 4.7 12.6 16h-25.8zM301.1 67.6c-9.8 0-16.1 4.6-19.6 7.8l-1.3-6.2h-22v116.6l25-5.3.1-28.3c3.6 2.6 8.9 6.3 17.7 6.3 17.9 0 34.2-14.4 34.2-46.1-.1-29-16.6-44.8-34.1-44.8zm-6 68.9c-5.9 0-9.4-2.1-11.8-4.7l-.1-37.1c2.6-2.9 6.2-4.9 11.9-4.9 9.1 0 15.4 10.2 15.4 23.3 0 13.4-6.2 23.4-15.4 23.4zM223.8 61.7l25.1-5.4V36l-25.1 5.3zM223.8 69.3h25.1v87.5h-25.1zM196.9 76.7l-1.6-7.4h-21.6v87.5h25V97.5c5.9-7.7 15.9-6.3 19-5.2v-23c-3.2-1.2-14.9-3.4-20.8 7.4zM146.9 47.6l-24.4 5.2-.1 80.1c0 14.8 11.1 25.7 25.9 25.7 8.2 0 14.2-1.5 17.5-3.3V135c-3.2 1.3-19 5.9-19-8.9V90.6h19V69.3h-19l.1-21.7zM79.3 94.7c0-3.9 3.2-5.4 8.5-5.4 7.6 0 17.2 2.3 24.8 6.4V72.2c-8.3-3.3-16.5-4.6-24.8-4.6C67.5 67.6 52 78.8 52 97.4c0 29.2 40.1 24.5 40.1 37.1 0 4.6-4 6.1-9.6 6.1-8.3 0-18.9-3.4-27.3-8v23.8c9.3 4 18.7 5.7 27.3 5.7 20.8 0 35.1-10.3 35.1-28.2-.1-31.5-40.3-25.9-40.3-37.2z"/></svg> Stripe</span>
+            <span class="int-chip"><img src="icons/slack.png" width="14" height="14"/> Slack</span>
+            <span class="int-chip"><img src="icons/notion.png" width="14" height="14"/> Notion</span>
+            <span class="int-chip"><img src="icons/hubspot.png" width="14" height="14"/> HubSpot</span>
+            <span class="int-chip"><img src="icons/sentry.webp" width="14" height="14"/> Sentry</span>
+            <span class="int-chip"><img src="icons/cloudflare.png" width="14" height="14"/> Cloudflare</span>
+            <span class="int-chip"><img src="icons/docusign.png" width="14" height="14"/> DocuSign</span>
+          </div>
+        </div>
+        <!-- Row 2 -->
+        <div class="marquee-track">
+          <div class="marquee-scroll scroll-right">
+            <span class="int-chip"><svg viewBox="0 0 16 16" width="14" height="14" fill="#24292f"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg> GitHub</span>
+            <span class="int-chip"><img src="icons/google-calendar.png" width="14" height="14"/> Calendar</span>
+            <span class="int-chip"><img src="icons/x.png" width="14" height="14"/> X</span>
+            <span class="int-chip"><img src="icons/intercom.png" width="14" height="14"/> Intercom</span>
+            <span class="int-chip"><img src="icons/jira.svg" width="14" height="14"/> Jira</span>
+            <span class="int-chip"><img src="icons/vercel.svg" width="14" height="14"/> Vercel</span>
+            <span class="int-chip"><img src="icons/reddit.png" width="14" height="14"/> Reddit</span>
+            <span class="int-chip"><img src="icons/figma.svg" width="14" height="14"/> Figma</span>
+            <span class="int-chip"><img src="icons/google-sheet.png" width="14" height="14"/> Google Sheets</span>
+            <!-- duplicate -->
+            <span class="int-chip"><svg viewBox="0 0 16 16" width="14" height="14" fill="#24292f"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg> GitHub</span>
+            <span class="int-chip"><img src="icons/google-calendar.png" width="14" height="14"/> Calendar</span>
+            <span class="int-chip"><img src="icons/x.png" width="14" height="14"/> X</span>
+            <span class="int-chip"><img src="icons/intercom.png" width="14" height="14"/> Intercom</span>
+            <span class="int-chip"><img src="icons/jira.svg" width="14" height="14"/> Jira</span>
+            <span class="int-chip"><img src="icons/vercel.svg" width="14" height="14"/> Vercel</span>
+            <span class="int-chip"><img src="icons/reddit.png" width="14" height="14"/> Reddit</span>
+            <span class="int-chip"><img src="icons/figma.svg" width="14" height="14"/> Figma</span>
+            <span class="int-chip"><img src="icons/google-sheet.png" width="14" height="14"/> Google Sheets</span>
+          </div>
+        </div>
+        <!-- Row 3 -->
+        <div class="marquee-track">
+          <div class="marquee-scroll scroll-left slow">
+            <span class="int-chip"><img src="icons/cal-com.svg" width="14" height="14"/> Cal.com</span>
+            <span class="int-chip"><img src="icons/granola.png" width="14" height="14"/> Granola</span>
+            <span class="int-chip"><img src="icons/resend.svg" width="14" height="14"/> Resend</span>
+            <span class="int-chip"><img src="icons/google-drive.png" width="14" height="14"/> Google Drive</span>
+            <span class="int-chip"><img src="icons/dropbox.png" width="14" height="14"/> Dropbox</span>
+            <span class="int-chip"><img src="icons/perplexity.webp" width="14" height="14"/> Perplexity</span>
+            <span class="int-chip"><img src="icons/asana.svg" width="14" height="14"/> Asana</span>
+            <span class="int-chip"><img src="icons/posthog.png" width="14" height="14"/> PostHog</span>
+            <!-- duplicate -->
+            <span class="int-chip"><img src="icons/cal-com.svg" width="14" height="14"/> Cal.com</span>
+            <span class="int-chip"><img src="icons/granola.png" width="14" height="14"/> Granola</span>
+            <span class="int-chip"><img src="icons/resend.svg" width="14" height="14"/> Resend</span>
+            <span class="int-chip"><img src="icons/google-drive.png" width="14" height="14"/> Google Drive</span>
+            <span class="int-chip"><img src="icons/dropbox.png" width="14" height="14"/> Dropbox</span>
+            <span class="int-chip"><img src="icons/perplexity.webp" width="14" height="14"/> Perplexity</span>
+            <span class="int-chip"><img src="icons/asana.svg" width="14" height="14"/> Asana</span>
+            <span class="int-chip"><img src="icons/posthog.png" width="14" height="14"/> PostHog</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider-h"></div>
+
+      <!-- OpenClaw -->
+      <div class="openclaw-block">
+        <span class="openclaw-label">🦞 OpenClaw</span>
+        <p>Install mailclaw skill for your claw. Turn your inbox into an execution engine — powered by <strong>Mailclaw</strong>.</p>
+      </div>
+    </div>
+
+    <div class="v-divider"></div>
+
+    <div class="right">
+      <div class="glow-container" id="glow-container">
+        <div class="glow-blob blob-1"></div>
+        <div class="glow-blob blob-2"></div>
+        <div class="glow-blob blob-3"></div>
+        <div class="glow-blob blob-4"></div>
+      </div>
+      <!-- Card 1: GitHub PR merge -->
+      <div class="card">
+        <div class="card-head">
+          <span class="avatar" style="background:#f0f0f0;color:#24292f">
+            <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+          </span>
+          <div class="card-text">
+            <strong>Alex Chen</strong> opened a PR <span class="tag">feat: add OAuth2 flow</span> — CI passed, 2 approvals. No breaking changes found.
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="meta"><svg viewBox="0 0 16 16" width="11" height="11" fill="#6366f1"><path d="M5 3.254V3.25v.005a.75.75 0 110-.005zm.45 1.9a2.25 2.25 0 10-1.95.218v5.256a2.25 2.25 0 101.5 0V7.123A5.735 5.735 0 009.25 9h1.378a2.251 2.251 0 100-1.5H9.25a4.25 4.25 0 01-3.8-2.346zM12.75 9a.75.75 0 100-1.5.75.75 0 000 1.5zm-8.5 4.5a.75.75 0 100-1.5.75.75 0 000 1.5z"/></svg> 3 files · +127 −14 · <code>feature/oauth2</code></span>
+          <button class="card-btn"><svg viewBox="0 0 16 16" width="13" height="13" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg> Merge</button>
+        </div>
+      </div>
+
+      <!-- Card 2: Stripe refund -->
+      <div class="card">
+        <div class="card-head">
+          <span class="avatar" style="background:#f5f3ff;color:#635bff">
+            <svg viewBox="0 0 16 16" width="14" height="14" fill="none"><rect x="1.5" y="4" width="13" height="9" rx="1.5" stroke="currentColor" stroke-width="1.2"/><path d="M1.5 7h13" stroke="currentColor" stroke-width="1.2"/></svg>
+          </span>
+          <div class="card-text">
+            <strong>Sarah Lopez</strong> requested a refund — Pro plan unused for 28 days. Refund policy verified.
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="meta"><svg viewBox="0 0 16 16" width="11" height="11" fill="none"><rect x="1.5" y="4" width="13" height="9" rx="1.5" stroke="#635bff" stroke-width="1.2"/><path d="M1.5 7h13" stroke="#635bff" stroke-width="1.2"/></svg> Refund $79.00 to sarah@company.io</span>
+          <button class="card-btn"><svg viewBox="0 0 468 222.5" width="24" height="12" fill="#635bff"><path d="M414 113.4c0-25.6-12.4-45.8-36.1-45.8-23.8 0-38.2 20.2-38.2 45.6 0 30.1 17 45.3 41.4 45.3 11.9 0 20.9-2.7 27.7-6.5v-20c-6.8 3.4-14.6 5.5-24.5 5.5-9.7 0-18.3-3.4-19.4-15.2h48.9c0-1.3.2-6.5.2-8.9zm-49.4-9.5c0-11.3 6.9-16 13.2-16 6.1 0 12.6 4.7 12.6 16h-25.8zM301.1 67.6c-9.8 0-16.1 4.6-19.6 7.8l-1.3-6.2h-22v116.6l25-5.3.1-28.3c3.6 2.6 8.9 6.3 17.7 6.3 17.9 0 34.2-14.4 34.2-46.1-.1-29-16.6-44.8-34.1-44.8zm-6 68.9c-5.9 0-9.4-2.1-11.8-4.7l-.1-37.1c2.6-2.9 6.2-4.9 11.9-4.9 9.1 0 15.4 10.2 15.4 23.3 0 13.4-6.2 23.4-15.4 23.4zM223.8 61.7l25.1-5.4V36l-25.1 5.3zM223.8 69.3h25.1v87.5h-25.1zM196.9 76.7l-1.6-7.4h-21.6v87.5h25V97.5c5.9-7.7 15.9-6.3 19-5.2v-23c-3.2-1.2-14.9-3.4-20.8 7.4zM146.9 47.6l-24.4 5.2-.1 80.1c0 14.8 11.1 25.7 25.9 25.7 8.2 0 14.2-1.5 17.5-3.3V135c-3.2 1.3-19 5.9-19-8.9V90.6h19V69.3h-19l.1-21.7zM79.3 94.7c0-3.9 3.2-5.4 8.5-5.4 7.6 0 17.2 2.3 24.8 6.4V72.2c-8.3-3.3-16.5-4.6-24.8-4.6C67.5 67.6 52 78.8 52 97.4c0 29.2 40.1 24.5 40.1 37.1 0 4.6-4 6.1-9.6 6.1-8.3 0-18.9-3.4-27.3-8v23.8c9.3 4 18.7 5.7 27.3 5.7 20.8 0 35.1-10.3 35.1-28.2-.1-31.5-40.3-25.9-40.3-37.2z"/></svg> Refund</button>
+        </div>
+      </div>
+
+      <!-- Card 3: Google Calendar -->
+      <div class="card">
+        <div class="card-head">
+          <span class="avatar" style="background:#fef9ee;color:#ea4335">
+            <svg viewBox="0 0 16 16" width="14" height="14" fill="none"><rect x="2" y="3" width="12" height="11" rx="1.5" stroke="currentColor" stroke-width="1.2"/><path d="M2 6.5h12" stroke="currentColor" stroke-width="1.2"/><path d="M5.5 1.5v3M10.5 1.5v3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+          </span>
+          <div class="card-text">
+            <strong>Mike Johnson</strong> wants to reschedule the design review to Thursday 3 PM. No conflicts, 3 attendees notified.
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="meta"><svg viewBox="0 0 16 16" width="11" height="11" fill="none"><rect x="2" y="3" width="12" height="11" rx="1.5" stroke="#ea4335" stroke-width="1.2"/><path d="M2 6.5h12" stroke="#ea4335" stroke-width="1.2"/></svg> Thu, Mar 26 · 3:00 PM</span>
+          <div class="btn-pair">
+            <button class="card-btn ghost">Decline</button>
+            <button class="card-btn"><img src="icons/google-calendar.webp" alt="Google Calendar" width="13" height="13" style="vertical-align: middle;" /> Accept</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4: Slack command -->
+      <div class="card card-command">
+        <div class="card-head">
+          <span class="avatar" style="background:#f9f9f9;border:1px solid #eee">
+            <svg viewBox="0 0 16 16" width="14" height="14" fill="none">
+              <path d="M3.4 10.1a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0zm.6 0a1.2 1.2 0 012.4 0v3a1.2 1.2 0 01-2.4 0v-3z" fill="#E01E5A"/>
+              <path d="M5.9 3.4a1.2 1.2 0 110-2.4 1.2 1.2 0 010 2.4zm0 .6a1.2 1.2 0 010 2.4h-3a1.2 1.2 0 110-2.4h3z" fill="#36C5F0"/>
+              <path d="M12.6 5.9a1.2 1.2 0 112.4 0 1.2 1.2 0 01-2.4 0zm-.6 0a1.2 1.2 0 01-2.4 0v-3a1.2 1.2 0 012.4 0v3z" fill="#2EB67D"/>
+              <path d="M10.1 12.6a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4zm0-.6a1.2 1.2 0 010-2.4h3a1.2 1.2 0 110 2.4h-3z" fill="#ECB22E"/>
+            </svg>
+          </span>
+          <div class="card-text">
+            <strong>Slack</strong> summarize today's #dev-ops channel and flag anything that needs my response
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="ctx-row">
+            <span class="ctx">@ Add context</span>
+          </div>
+          <button class="card-btn">
+            <svg viewBox="0 0 16 16" width="13" height="13" fill="none">
+              <path d="M3.4 10.1a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0zm.6 0a1.2 1.2 0 012.4 0v3a1.2 1.2 0 01-2.4 0v-3z" fill="#E01E5A"/>
+              <path d="M5.9 3.4a1.2 1.2 0 110-2.4 1.2 1.2 0 010 2.4zm0 .6a1.2 1.2 0 010 2.4h-3a1.2 1.2 0 110-2.4h3z" fill="#36C5F0"/>
+              <path d="M12.6 5.9a1.2 1.2 0 112.4 0 1.2 1.2 0 01-2.4 0zm-.6 0a1.2 1.2 0 01-2.4 0v-3a1.2 1.2 0 012.4 0v3z" fill="#2EB67D"/>
+              <path d="M10.1 12.6a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4zm0-.6a1.2 1.2 0 010-2.4h3a1.2 1.2 0 110 2.4h-3z" fill="#ECB22E"/>
+            </svg>
+            Go ↵
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="divider"></div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <span>© 2025 Mailclaw</span>
+    <div class="footer-links">
+      <a href="https://x.com/mailclaw_io" target="_blank" rel="noopener noreferrer"><img src="icons/x.png" width="18" height="18" style="vertical-align: middle; margin-right: 8px;" />X →</a>
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div class="toast" id="toast">
+    <svg viewBox="0 0 16 16" width="14" height="14" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke="#111" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <span id="toast-msg">You're on the list!</span>
+  </div>
+
+  <!-- Success Modal -->
+  <div class="modal-overlay" id="success-modal">
+    <canvas id="confetti-canvas"></canvas>
+    <button class="modal-close-btn" id="modal-close">&times;</button>
+    <div class="modal-card computer-modal">
+      <!-- 3D 电脑模型 -->
+      <div class="scene">
+        <div class="computer-wrapper">
+          <div class="computer-unit">
+            <div class="face front">
+              <div class="screen-inset">
+                <div class="crt">
+                  <div class="terminal-header">
+                    <span>terminal</span>
+                    <span>[x]</span>
+                  </div>
+                  <div class="terminal-content">
+                    <p><span class="prompt">$ </span><span id="line1"></span></p>
+                    <p id="line2"></p>
+                    <p id="line3"></p>
+                    <p id="line4"></p>
+                    <p id="line5"></p>
+                    <p>$ <span class="cursor"></span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="floppy-slot"></div>
+              <div class="power-led"></div>
+              <div class="vent-grid">
+                <div class="vent"></div>
+                <div class="vent"></div>
+                <div class="vent"></div>
+                <div class="vent"></div>
+                <div class="vent"></div>
+              </div>
+            </div>
+            <div class="face back"></div>
+            <div class="face left"></div>
+            <div class="face right"></div>
+            <div class="face top"></div>
+            <div class="face bottom"></div>
+          </div>
+          <div class="computer-shadow"></div>
+          <div class="keyboard-assembly">
+            <div class="kb-top">
+              <div class="keys-grid">
+                <div class="key"></div><div class="key"></div><div class="key"></div>
+                <div class="key"></div><div class="key"></div><div class="key"></div>
+                <div class="key"></div><div class="key"></div><div class="key"></div>
+                <div class="key"></div><div class="key"></div><div class="key"></div>
+                <div class="key wide"></div><div class="key"></div><div class="key"></div>
+                <div class="key"></div><div class="key"></div><div class="key"></div>
+                <div class="key"></div><div class="key"></div><div class="key"></div>
+                <div class="key"></div><div class="key"></div>
+                <div class="key wide"></div><div class="key"></div><div class="key"></div>
+                <div class="key"></div><div class="key"></div><div class="key"></div>
+                <div class="key"></div><div class="key"></div><div class="key"></div>
+                <div class="key"></div><div class="key wide"></div>
+                <div class="key"></div><div class="key"></div><div class="key"></div>
+                <div class="key space"></div><div class="key"></div><div class="key"></div>
+                <div class="key"></div><div class="key"></div>
+              </div>
+            </div>
+            <div class="kb-front"></div>
+            <div class="kb-shadow"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
