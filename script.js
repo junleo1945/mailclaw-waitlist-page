@@ -96,7 +96,7 @@ const form = document.getElementById('waitlist-form');
 const modal = document.getElementById('success-modal');
 const modalClose = document.getElementById('modal-close');
 
-form.addEventListener('submit', e => {
+form.addEventListener('submit', async e => {
   e.preventDefault();
   const input = document.getElementById('email-input');
   const email = input.value.trim();
@@ -106,7 +106,22 @@ form.addEventListener('submit', e => {
   btn.disabled = true;
   btn.style.opacity = '.5';
 
-  setTimeout(() => {
+  try {
+    // Send email to Cloudflare Pages Function endpoint
+    const response = await fetch('/api/submit', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ email })
+    });
+
+    // Check if the request was successful
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
+    // Success! Show animations and modal
     btn.disabled = false;
     btn.style.opacity = '1';
     input.value = '';
@@ -119,7 +134,12 @@ form.addEventListener('submit', e => {
 
     // Start typing animation with user email
     startTypingAnimation(email);
-  }, 800);
+  } catch (error) {
+    console.error('Submission failed:', error);
+    alert('Oops! Something went wrong. Please try again.');
+    btn.disabled = false;
+    btn.style.opacity = '1';
+  }
 });
 
 // Close modal
